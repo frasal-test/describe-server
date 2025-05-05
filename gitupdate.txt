@@ -1,6 +1,0 @@
-git status
-git add .
-git commit -m "Updated README.md"
-git push
-git push -u origin main
-git status
