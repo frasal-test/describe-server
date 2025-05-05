@@ -83,7 +83,7 @@ pip install -r requirements.txt
 3. Set up environment variables (see .env.example )
 4. Run the server:
 ```bash
-python -m app.main
+./start_api.sh
 ```
 
 ## Configuration
