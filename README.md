@@ -28,7 +28,7 @@ For more details on the model implementation, see the `KimiVLInference` class in
 
 ### 1. Text Generation Endpoint
 
-POST /generate/text
+*POST /generate/text*
 - Generates text responses without images
 - Accepts JSON payload with:
   - `prompt` (required): The text prompt
@@ -39,7 +39,7 @@ POST /generate/text
 
 ### 2. Image Processing Endpoint
 
-POST /generate/image
+*POST /generate/image*
 - Generates responses based on uploaded images and text prompts
 - Accepts form data with:
   - `prompt` (required): The text prompt
@@ -51,7 +51,7 @@ POST /generate/image
 
 ### 3. Image URL Processing Endpoint
 
-POST /generate/image_url
+*POST /generate/image_url*
 - Generates responses based on an image URL and text prompt
 - Accepts form data with:
   - `prompt` (required): The text prompt
@@ -62,7 +62,7 @@ POST /generate/image_url
   - `image_url` (required): URL of the image to process
 
 ### 4. Health Check Endpoint
-GET /health
+*GET /health*
 - Simple health check endpoint that returns `{"status": "healthy"}`
 - Used for monitoring the API's availability
 

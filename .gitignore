@@ -87,6 +87,7 @@ env.bak/
 venv.bak/
 logs/
 api_server.pid
+.gitupdate.txt
 
 # Spyder project settings
 .spyderproject
