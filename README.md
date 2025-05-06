@@ -1,3 +1,12 @@
+
+
+
+          
+# Server README Update
+
+I'll update the README.md to include information about installing NVIDIA CUDA drivers using the provided script. Here's the modified version:
+
+```markdown:/Users/francescosalerno/Projects/describe-monorepo/server/README.md
 # Describe Server
 
 An API server for image analysis using Large Language Models (LLMs).
@@ -80,11 +89,30 @@ cd describe-server
 ```bash
 pip install -r requirements.txt
 ```
-3. Set up environment variables (see .env.example )
-4. Run the server:
+
+3. Install NVIDIA CUDA drivers:
+   This application requires NVIDIA CUDA drivers to be installed for GPU acceleration. A convenience script is provided to automate the installation process:
+   ```bash
+   ./install_cuda_drivers.sh
+   ```
+   The script will:
+   - Update your system
+   - Install NVIDIA drivers
+   - Configure CUDA 12.8 repositories
+   - Install CUDA Toolkit
+   - Set up environment variables
+   - Install PyTorch with CUDA support
+   - Create and configure a Python virtual environment
+   
+   Note: The script will require a system reboot during the installation process.
+
+4. Set up environment variables (see .env.example)
+
+5. Run the server:
 ```bash
 ./start_api.sh
 ```
+Note: this script contains a API_KEY that you can change to your own. Remember to copy it into LLM_API_KEY in the client .env file.
 
 ## Configuration
 Copy .env.example to .env and adjust the settings as needed.
